@@ -103,6 +103,24 @@ nav { display: flex; align-items: center; gap: 22px; font-size: 13px; font-weigh
 .stats strong { display: block; font: 44px/1.2 var(--serif); color: var(--green); }
 .stats span { display: block; font-size: 13px; color: var(--muted); margin-top: 8px; max-width: 195px; line-height: 1.65; }
 
+/* Professional overview and reading index */
+.profile-section { padding-top: 65px; padding-bottom: 65px; border-bottom: 1px solid var(--rule); }
+.profile-heading { max-width: 820px; }
+.profile-heading .eyebrow { margin-bottom: 18px; }
+.profile-heading h2 { font: 43px/1.15 var(--serif); letter-spacing: -.5px; margin-bottom: 20px; }
+.profile-heading > p:last-child { font-size: 16px; color: var(--muted); line-height: 1.85; max-width: 740px; }
+.profile-overview { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 37px; margin-top: 35px; }
+.profile-overview article { display: flex; flex-direction: column; min-width: 0; padding-top: 22px; border-top: 1px solid #cbded0; }
+.profile-overview h3 { font: 30px/1.2 var(--serif); margin-bottom: 17px; }
+.profile-overview p { font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 22px; }
+.profile-overview article > a { font-size: 13px; color: var(--green); line-height: 1.75; margin-top: auto; text-decoration: underline; text-underline-offset: 4px; }
+.record-directory { margin-top: 39px; padding-top: 27px; border-top: 1px solid var(--rule); }
+.record-directory h3 { font: 26px/1.2 var(--serif); margin-bottom: 18px; }
+.record-index { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 7px 35px; padding: 0; margin: 0; list-style: none; }
+.record-index li { margin: 0; padding: 0; }
+.record-index a { display: inline-flex; align-items: baseline; gap: 12px; padding: 5px 0; font-size: 14px; color: var(--green); line-height: 1.7; }
+.record-index a > span { font-size: 12px; color: #6a8a72; }
+
 /* Shared section hierarchy */
 .section { padding-top: 92px; padding-bottom: 92px; }
 .section-heading { display: flex; gap: 55px; justify-content: space-between; align-items: flex-end; margin-bottom: 41px; }
@@ -301,6 +319,8 @@ input::placeholder { color: #68776e; }
   .contact-email { font-size: 25px; }
   .expertise-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 26px 35px; }
   .tool-type { display: none; }
+  .profile-overview { gap: 27px; }
+  .record-index { gap: 7px 25px; }
   .commercial-section { padding: 28px; }
   .protocol-stages li { padding: 18px 12px; gap: 9px; }
   .commercial-crops { gap: 22px; }
@@ -343,6 +363,17 @@ input::placeholder { color: #68776e; }
   .stats strong { font-size: 39px; }
   .stats span { font-size: 13px; max-width: 180px; line-height: 1.7; }
   .section { padding-top: 60px; padding-bottom: 60px; }
+  .profile-section { padding-top: 49px; padding-bottom: 49px; }
+  .profile-heading h2 { font-size: 37px; }
+  .profile-heading > p:last-child { font-size: 15px; }
+  .profile-overview { grid-template-columns: 1fr; gap: 27px; margin-top: 27px; }
+  .profile-overview article { padding-top: 23px; }
+  .profile-overview h3 { font-size: 29px; margin-bottom: 15px; }
+  .profile-overview p { font-size: 15px; margin-bottom: 17px; }
+  .record-directory { margin-top: 32px; padding-top: 25px; }
+  .record-directory h3 { font-size: 25px; }
+  .record-index { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px 22px; }
+  .record-index a { font-size: 13px; gap: 8px; }
   .section-heading { display: block; margin-bottom: 31px; }
   .section-heading h2 { font-size: 40px; letter-spacing: -.5px; }
   .section-heading .eyebrow { font-size: 10px; margin-bottom: 18px; }
@@ -456,6 +487,8 @@ input::placeholder { color: #68776e; }
   .commercial-heading h3 { font-size: 31px; }
   .protocol-stages li { flex-direction: column; align-items: flex-start; padding: 16px 13px; gap: 9px; }
   .section-heading h2 { font-size: 37px; }
+  .profile-heading h2 { font-size: 35px; }
+  .record-index { gap: 9px 20px; }
   .expertise-grid { grid-template-columns: 1fr; gap: 22px; }
   .expertise-grid p { max-width: 34em; }
   .publication { grid-template-columns: 1fr; gap: 9px; }
@@ -477,6 +510,9 @@ input::placeholder { color: #68776e; }
   .hero h1 br { display: none; }
   .hero h1 em { margin-left: 10px; }
   .section { padding: 30px 0; }
+  .profile-section { padding-top: 30px; padding-bottom: 30px; }
+  .profile-overview article { break-inside: avoid; }
+  .record-directory { display: none; }
   .section-heading h2 { font-size: 32px; }
   .research-card, .research-card.featured, .experience-section, .education-section { background: none; color: #000; }
   .stats { padding: 20px 0; }
