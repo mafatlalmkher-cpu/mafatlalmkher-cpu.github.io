@@ -1,6 +1,8 @@
 # Mafatlal M. Kher portfolio
 
-A static personal portfolio covering plant biotechnology, plant virology, research, academic experience, education, publications, teaching, and research software.
+[Visit the portfolio](https://mafatlalmkher-cpu.github.io/)
+
+A personal portfolio covering plant biotechnology, plant virology, research, academic experience, education, publications, teaching, and research software.
 
 ## Publish on GitHub Pages
 
@@ -9,7 +11,7 @@ A static personal portfolio covering plant biotechnology, plant virology, resear
 3. In **Settings → Pages**, choose **Deploy from a branch**, then **main** and **/(root)**. Save.
 4. Wait for the Pages deployment to finish. The intended address is `https://mafatlalmkher-cpu.github.io/`.
 
-This address becomes live only after a successful GitHub Pages deployment.
+GitHub Pages is configured to publish this website from the root of the main branch. Future changes to that branch are published automatically.
 
 ## Update the portfolio
 
