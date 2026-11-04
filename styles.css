@@ -150,7 +150,8 @@ nav { display: flex; align-items: center; gap: 22px; font-size: 13px; font-weigh
 .featured .tags span { background: #e7f0e9; }
 .card-link { font-size: 13px; line-height: 1.7; border-top: 1px solid var(--rule); padding-top: 17px; color: var(--green); }
 .card-link > span { float: right; margin-left: 7px; }
-.research-illustration { display: block; flex-shrink: 0; width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; background: #f7f6ef; border: 1px solid #e8ece4; border-radius: 7px; margin: 0 0 25px; }
+.research-illustration-link { display: block; flex-shrink: 0; border-radius: 7px; margin: 0 0 25px; }
+.research-illustration { display: block; width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; background: #fff; border: 1px solid #e8ece4; border-radius: 7px; }
 .research-illustration-note { font-size: 12px; color: var(--muted); line-height: 1.65; margin: 14px 0 0; }
 .grant-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 30px; margin: 29px 0; }
 .grant-list article > span { font-size: 11px; letter-spacing: .7px; }
@@ -387,7 +388,8 @@ input::placeholder { color: #68776e; }
   .tags { margin-bottom: 23px; }
   .tags span { font-size: 11px; }
   .card-link { font-size: 13px; }
-  .research-illustration { max-height: 290px; margin-bottom: 24px; }
+  .research-illustration-link { margin-bottom: 24px; }
+  .research-illustration { max-height: 290px; }
   .research-illustration-note { font-size: 12px; margin-top: 13px; }
   .wide-detail { margin-top: 27px; }
   .wide-detail summary { font-size: 16px; padding: 22px 0; }
@@ -520,7 +522,8 @@ input::placeholder { color: #68776e; }
   .publication h3 a::after { content: ' (' attr(href) ')'; font-size: 10px; }
   .research-card, .timeline-item, .publication, .education-list article { break-inside: avoid; }
   details:not([open]) > div, details:not([open]) > ul { display: block; }
-  .research-illustration { max-height: 32mm; margin-bottom: 12px; break-inside: avoid; }
+  .research-illustration-link { margin-bottom: 12px; break-inside: avoid; }
+  .research-illustration { max-height: 32mm; }
   .research-illustration-note { font-size: 10px; color: #555; }
   .commercial-section { background: #fff; border-radius: 0; padding: 22px; margin-top: 26px; }
   .commercial-crops article, .protocol-stages { break-inside: avoid; }
